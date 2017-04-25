@@ -16,40 +16,51 @@
 
 
     <form id="Techsupp-form" method="POST" action="Techsupp.php" role="form">
+        <div>
+            <label for="fname"> First Name </label>
+            <input type="text" id="fname" />
+        </div>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" />
+        </div>
 
-        First Name: <br>
-        <input type="text" name="firstname"><br> Last Name: <br>
-        <input type="text" name="lastnmae"><br>
+        <div>
 
-        <label for="Countrylist"> Country </label><br>
+            <label for="Countrylist"> Country </label><br>
+            <select id="Countrylist" />
 
-        <select name="Countrylist">
-            
-        <option value=" - "> - </option>
-        <option value="Austria">Austria</option>
-        <option value="Belgium">Belgium</option>
-        <option value="Denmark">Denmark</option>
-        <option value="Finland">Finland</option>
-        <option value="France">France</option>
-        <option value="Germany">Germany</option>
-        <option value="Greece">Greece</option>
-        <option value="Iceland">Iceland</option>
-        <option value="Ireland">Ireland</option>
-        <option value="Italy">Italy</option>
-        <option value="Luxembourg">Luxembourg</option>
-        <option value="Netherlands">Netherlands</option>
-        <option value="Norway">Norway</option>
-        <option value="Portugal">Portugal</option>
-        <option value="Spain">Spain</option>
-        <option value="Sweden">Sweden</option>
-        <option value="Switzerland">Switzerland</option>
-        <option value="United Kingdom">United Kingdom</option>
+            <option value=" - "> - </option>
+            <option value="Austria">Austria</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Finland">Finland</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Greece">Greece</option>
+            <option value="Iceland">Iceland</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Italy">Italy</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Norway">Norway</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Spain">Spain</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="United Kingdom">United Kingdom</option>
 
-</select> <br>
+
+            </select>
+        </div>
+        <br>
         <ul>
-            <li><h3>Gender</h3></li>
-            <li><input type="radio" name="Gender" value="Male">Male</li>
-            <li><input type="radio" name="Gender" value="Female"><Female></Female></li>
+            <li>
+                Gender
+                <li><input type="radio" name="Gender" value="Male">Male</li>
+                <li><input type="radio" name="Gender" value="Female">
+                    <Female></Female>
+                </li>
 
         </ul>
 
