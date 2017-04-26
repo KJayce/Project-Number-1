@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    position: relative;
+    position: relative: ;
 }
 
 
@@ -12,11 +12,23 @@ form {
 }
 
 .form-content {
-    
-    margin-left: auto;
-    height: 1000px;
+    background-color: red;
+    position: absolute;
+    float: initial;
+    font-size: 115%;
+    right: 14em;
+    margin-left: 6em;
+    height: 650px;
     width: 800px;
-    border: 1px hidden;
+    max-width: 800px;
+    max-height:650;
+    border: 1px solid;
     word-wrap: break-word;  
 
+}
+
+#gndr {
+    position: relative;
+    left: 60px;
+    bottom: 20px;
 }
