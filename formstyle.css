@@ -1,4 +1,5 @@
 body{
+    
     background: url("Problem.jpg") no-repeat scroll center;
     -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7,6 +8,8 @@ body{
   height: 768px;
   max-width: 1366px;
 }
+
+
 h1 {
     text-align: center;
     position: relative;
