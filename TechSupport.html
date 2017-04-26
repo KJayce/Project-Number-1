@@ -9,7 +9,11 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href='Techsupp.css' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    
+	
+	<!--till here this is head--------------------------------------------->
+	
+	<body>
 
         <div class="container">
 
@@ -22,15 +26,18 @@
                     <p class="lead">This is a demo for our Projects 1 - Forms dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>
 
 					
-	<!--till here this is head--------------------------------------------->
-
-                    <form id="contact-form" method="post" action="contact.php">
+					<form id="contact-form" method="post" action="contact.php">
+						
 
     <div class="messages"></div>
 
     <div class="controls">
 
-        <div class="row">
+        
+		
+
+		
+		<div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="form_name">Firstname *</label>
@@ -46,7 +53,12 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        
+		
+		
+		
+		
+		<div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="form_email">Email *</label>
@@ -62,6 +74,10 @@
                 </div>
             </div>
         </div>
+		
+		
+		<!-- ci-dessous code pas propre => réorganiser ?.. ------------------------------>
+		
 		
 		<div class="row">
 			<div class="col-md-6">
@@ -86,9 +102,7 @@
 		   <option value="swe">Sweden</option>
 		   <option value="swiss">Switzerland</option>
 		   <option value="UK">United Kingdom</option>
-		   
-		   
-       </select>
+		</select>
    </p>
 			</div>
 			
@@ -101,11 +115,13 @@
        
        <input type="checkbox" name="Féminin" id="féminin" /> <label for="féminin">Féminin</label>
    </p>
+					</div>
 				</div>
-					</div>
-					</div>
+			</div>
 
 
+		
+		
 		
         <div class="row">
             <div class="col-md-12">
@@ -117,13 +133,18 @@
            </div>
            
 			
-<!--till here this is corps---------------------------------------------------->
+
 			
 			<div class="col-md-12">
                 <input type="submit" class="btn btn-success btn-send" value="Send message">
             </div>
         </div>
-        <div class="row">
+        
+		
+<!--till here this is corps---------------------------------------------------->		
+		
+		
+		<div class="row">
             <div class="col-md-12">
                 <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
             </div>
@@ -143,7 +164,7 @@
         <script src="validator.js"></script>
         <script src="contact.js"></script>
 		
-<!--till here this is scrips ------------------------------------------------------>
+<!--till here this is scripts ------------------------------------------------------>
 		
     </body>
 </html>
