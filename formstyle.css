@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+
+form {
+    list-style-type: none;
+    position: relative;
+    background-color:solid lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-content {
+    
+    margin-left: auto;
+    height: 1000px;
+    width: 800px;
+    border: 1px hidden;
+    word-wrap: break-word;  
+
+}

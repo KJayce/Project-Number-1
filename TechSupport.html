@@ -4,30 +4,30 @@
 
 <head>
     <meta name="UTF-8" content="html">
-    <link href="Techsupp.css" rel="typesheet">
+    <link href="formstyle.css" rel="stylesheet" type="text/css">
     <title> Tech Support</title>
 </head>
 
 <body>
-
+<section class="form-content">
     <h1>Technical Support</h1>
 
     <h2>At your service!</h2>
 
 
     <form id="Techsupp-form" method="POST" action="Techsupp.php" role="form">
-        <div>
+        <div id="1nam">
             <label for="fname"> First Name </label>
             <input type="text" id="fname" />
         </div>
-        <div>
+        <div id="2nam">
             <label for="lname">Last Name</label>
             <input type="text" id="lname" />
         </div>
 
         <div>
 
-            <label for="Countrylist"> Country </label><br>
+            <label for="Countrylist"> Country </label>
             <select id="Countrylist" />
 
             <option value=" - "> - </option>
@@ -50,15 +50,15 @@
             <option value="Switzerland">Switzerland</option>
             <option value="United Kingdom">United Kingdom</option>
 
-
             </select>
         </div>
-        <br>
-        <ul>
-            <li>
+
+<div>
+    
+</div>
                 Gender
-                <li><input type="radio" name="Gender" value="Male">Male</li>
-                <li><input type="radio" name="Gender" value="Female">
+                <input type="radio" id="Gender" value="Male">
+                <input type="radio" id="Gender" value="Female">
                     <Female></Female>
                 </li>
 
@@ -74,7 +74,7 @@
 
     </form>
 
-
+</section>
 </body>
 
 </html>
