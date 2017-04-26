@@ -1,9 +1,11 @@
 body{
-    background: url("Val2.jpg") no-repeat scroll center;
+    background: url("Problem.jpg") no-repeat scroll center;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 768px;
+  max-width: 1366px;
 }
 h1 {
     text-align: center;
@@ -20,7 +22,7 @@ form {
 
 .form-content {
     border-radius: 5%;
-    background: url("Sky.jpg") no-repeat scroll center;
+    background: url("Moronic.jpg") no-repeat scroll center;
     position: absolute;
     float: initial;
     font-size: 115%;
