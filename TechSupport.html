@@ -10,25 +10,29 @@
 
 <body>
     <section class="form-content">
-        <h1>Technical Support</h1>
-
-        <h2>At your service!</h2>
-
-
-        <form id="Techsupp-form" method="POST" action="Techsupp.php" role="form">
-            <div id="1nam">
-                <label for="fname"> First Name </label>
-                <input type="text" id="fname" />
-            </div>
-            <div id="2nam">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" />
-            </div>
-
+        <div id="hone">
+            <h1>Technical Support</h1>
             <div>
 
-                <label for="Countrylist"> Country </label>
-                <select id="Countrylist" >
+                <div id="thwo">
+                    <h2>At your service!</h2>
+                </div>
+
+
+                <form id="Techsupp-form" method="POST" action="Techsupp.php" role="form">
+                    <div id="1nam">
+                        <label for="fname"> First Name </label>
+                        <input type="text" id="fname" />
+                    </div>
+                    <div id="2nam">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" />
+                    </div>
+
+                    <div>
+
+                        <label for="Countrylist"> Country </label>
+                        <select id="Countrylist">
 
                 <option value=" - "> - </option>
                 <option value="Austria">Austria</option>
@@ -51,33 +55,33 @@
                 <option value="United Kingdom">United Kingdom</option>
 
                 </select>
-            </div>
+                    </div>
 
-            <div>
-                <label>Gender</label>
-                <section id="gndr">
-                    <input type="radio" name="Gender" value="Male">Male<br>
-                    <input type="radio" name="Gender" value="Female">Female
-                </section>
-            </div>
-            <div>
-            <label for="issuelist">What's going wrong?</label>
-            <select id="issuelist">
+                    <div>
+                        <label>Gender</label>
+                        <section id="gndr">
+                            <input type="radio" name="Gender" value="Male">Male<br>
+                            <input type="radio" name="Gender" value="Female">Female
+                        </section>
+                    </div>
+                    <div>
+                        <label for="issuelist">What's going wrong?</label>
+                        <select id="issuelist">
                 <option value="Account">Account</option>
                 <option value="Technical">Technical Issue</option>
                 <option value="Transactions">Transactions</option>
             </select>
-            </div>
-            
-            <div>
-            <label>Tell us in details</label><br>
+                    </div>
 
-            <textarea name="comment" form="usrform">Enter text here...</textarea>
-            </div>
+                    <div>
+                        <label>Tell us in details</label><br>
 
-            <div>Submit</div>
+                        <textarea name="comment" form="usrform">Enter text here...</textarea>
+                    </div>
 
-        </form>
+                    <div>Submit</div>
+
+                </form>
 
     </section>
 </body>

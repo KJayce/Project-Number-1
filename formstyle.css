@@ -24,12 +24,13 @@ form {
 }
 
 .form-content {
+    
     border-radius: 5%;
     -webkit-background-size: 80px 65px;
     -moz-background-size: 80px 65px;
     -o-background-size: 80px 65px;
     background-size: 80px 65px;
-    background: url("Moronic.jpg") no-repeat scroll center;
+    background: url(".jpg") no-repeat scroll center;
     position: absolute;
     float: initial;
     font-size: 120%;
