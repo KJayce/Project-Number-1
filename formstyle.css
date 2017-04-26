@@ -1,6 +1,13 @@
+body{
+    background: url("Val2.jpg") no-repeat scroll center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 h1 {
     text-align: center;
-    position: relative: ;
+    position: relative;
 }
 
 
@@ -12,7 +19,8 @@ form {
 }
 
 .form-content {
-    
+    border-radius: 5%;
+    background: url("Sky.jpg") no-repeat scroll center;
     position: absolute;
     float: initial;
     font-size: 115%;
@@ -22,7 +30,7 @@ form {
     width: 800px;
     max-width: 800px;
     max-height:650;
-    border: 1px solid;
+    border: 1px solid ;
     word-wrap: break-word;  
 
 }
