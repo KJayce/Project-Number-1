@@ -1,5 +1,5 @@
 body{
-    
+
     background: url("Problem.jpg") no-repeat scroll center;
     -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -25,10 +25,14 @@ form {
 
 .form-content {
     border-radius: 5%;
+    -webkit-background-size: 80px 65px;
+    -moz-background-size: 80px 65px;
+    -o-background-size: 80px 65px;
+    background-size: 80px 65px;
     background: url("Moronic.jpg") no-repeat scroll center;
     position: absolute;
     float: initial;
-    font-size: 115%;
+    font-size: 120%;
     right: 14em;
     margin-left: 6em;
     height: 650px;
