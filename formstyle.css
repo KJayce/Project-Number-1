@@ -7,6 +7,9 @@ body{
   background-size: cover;
   height: 800px;
   max-width: 1366px;
+  display:block;
+  padding: 0 !important;
+  margin: 0;
 
 }
 
@@ -63,4 +66,11 @@ form {
     position: relative;
     left: 60px;
     bottom: 20px;
+}
+
+#msg {
+    display: block;
+    padding: 0 !important;
+    margin: 0;
+
 }
