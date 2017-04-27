@@ -5,6 +5,16 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+header {
+    background-color: #15C5BD;
+    margin-top:0 auto;
+}
+
+.form-content {
+    width: 100%;
+
+}
+
 h1 {
     position: relative;
     text-align: right;
