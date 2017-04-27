@@ -4,56 +4,86 @@
 
 <head>
     <meta name="UTF-8" content="html">
-    <link href="Techsupp.css" rel="typesheet" type="text/css">
+    <link href="formstyle.css" rel="stylesheet" type="text/css">
     <title> Tech Support</title>
 </head>
 
 <body>
+    <section class="form-content">
+        <header>
+            <h1>Technical Support</h1>
+            </header>
 
-    <h1>Technical Support</h1>
-
-    <h2>At your service!</h2>
-
-
-    <form id="Techsupp-form" method="POST" action="Techsupp.php" role="form">
-
-        First Name: <br>
-        <input type="text" name="firstname"><br> Last Name: <br>
-        <input type="text" name="lastnmae"><br>
+                <div id="thwo">
+                    <h2>At your service!</h2>
+                </div>
 
 
+                <form id="Techsupp-form" method="POST" action="Techsupp.php" role="form">
+                    <div id="1nam">
+                        <label for="fname"> First Name </label>
+                        <input type="text" id="fname" />
+                    </div>
+                    <div id="2nam">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" />
+                    </div>
 
-    
-        Country <br>
-        Gender <br>
-        What's going wrong? <br>    
-        Tell us in details <br>
+                    <div>
 
+                        <label for="Countrylist"> Country </label>
+                        <select id="Countrylist">
 
-        <div>Submit</div>
+                <option value=" - "> - </option>
+                <option value="Austria">Austria</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Greece">Greece</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Italy">Italy</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Norway">Norway</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Spain">Spain</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="United Kingdom">United Kingdom</option>
 
-    </form>
+                </select>
+                    </div>
 
-    <select name="Countrylist" form="countryform">
-        <option value="Austria"></option>
-        <option value="Belgium"></option>
-        <option value="Denmark"></option>
-        <option value="Finland"></option>
-        <option value="France"></option>
-        <option value="Germany"></option>
-        <option value="Greece"></option>
-        <option value="Iceland"></option>
-        <option value="Ireland"></option>
-        <option value="Italy"></option>
-        <option value="Luxembourg"></option>
-        <option value="Netherlands"></option>
-        <option value="Norway"></option>
-        <option value="Portugal"></option>
-        <option value="Spain"></option>
-        <option value="Sweden"></option>
-        <option value="Switzerland"></option>
-        <option value="United Kingdom"></option>
+                    <div>
+                        <label>Gender</label>
+                        <section id="gndr">
+                            <input type="radio" name="Gender" value="Male">Male<br>
+                            <input type="radio" name="Gender" value="Female">Female
+                        </section>
+                    </div>
+                    <div>
+                        <label for="issuelist">What's going wrong?</label>
+                        <select id="issuelist">
+                <option value="Account">Account</option>
+                <option value="Technical">Technical Issue</option>
+                <option value="Transactions">Transactions</option>
+            </select>
+                    </div>
 
+                    <div>
+                        <label for="comment">Tell us in details</label><br>
+
+                        <textarea id="comment" rows="20" cols="50" form="usrform" placeholder="Describe your issue here..."></textarea>
+                    </div>
+
+                   <button class="button" type="submit"> submit </button>
+
+                </form>
+
+    </section>
 </body>
 
 </html>

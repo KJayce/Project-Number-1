@@ -1,0 +1,53 @@
+body{
+
+    background: url("Problem.jpg") no-repeat scroll center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 768px;
+  max-width: 1366px;
+  
+}
+
+
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+
+form {
+    list-style-type: none;
+    position: relative;
+    background-color:solid lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-content {
+    
+    border-radius: 5%;
+    -webkit-background-size: 80px 65px;
+    -moz-background-size: 80px 65px;
+    -o-background-size: 80px 65px;
+    background-size: 80px 65px;
+    background: url(".jpg") no-repeat scroll center;
+    position: absolute;
+    float: initial;
+    font-size: 120%;
+    right: 14em;
+    margin-left: 6em;
+    height: 650px;
+    width: 800px;
+    max-width: 800px;
+    max-height:650;
+    border: 1px solid ;
+    word-wrap: break-word;  
+
+}
+
+#gndr {
+    position: relative;
+    left: 60px;
+    bottom: 20px;
+}
