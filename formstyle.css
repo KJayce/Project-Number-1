@@ -17,6 +17,7 @@ h1 {
 
 .jumbotron {
     max-height: 600px;
+    color: moccasin;
 }
 
 form {
@@ -27,10 +28,13 @@ form {
 }
 
 .page-header {
-    background:#85E0D8;
+
+    background:50px 50px url("crash.png") no-repeat scroll center#85E0D8
+;
     padding-bottom: 1em;
     border-radius: 10px;
     border-style: outset;
+    border-color: beige;
 
 }
 .container {
