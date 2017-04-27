@@ -5,7 +5,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 768px;
+  height: 800px;
   max-width: 1366px;
 
 }
@@ -15,6 +15,9 @@ h1 {
     position: relative;
 }
 
+.jumbotron {
+    max-height: 600px;
+}
 
 form {
     list-style-type: none;
@@ -23,7 +26,13 @@ form {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.page-header {
+    background:#85E0D8;
+    padding-bottom: 1em;
+    border-radius: 10px;
+    border-style: outset;
 
+}
 .container {
     
     border-radius: 1%;
@@ -37,7 +46,7 @@ form {
     font-size: 120%;
     right: 14em;
     margin-left: 6em;
-    height: 650px;
+    height: 800px;
     width: 800px;
     max-width: 800px;
     max-height:650;
