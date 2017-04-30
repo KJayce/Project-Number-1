@@ -5,7 +5,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 800px;
+  height: 900px;
   max-width: 1366px;
   display:block;
   padding: 0 !important;
@@ -31,9 +31,7 @@ form {
 }
 
 .page-header {
-
-    background:50px 50px url("crash.png") no-repeat scroll center#85E0D8
-;
+    background-color: transparent gainsboro ;
     padding-bottom: 1em;
     border-radius: 10px;
     border-style: outset;
@@ -47,7 +45,6 @@ form {
     -moz-background-size: 80px 65px;
     -o-background-size: 80px 65px;
     background-size: 80px 65px;
-    background: url(".jpg") no-repeat scroll center;
     position: absolute;
     float: initial;
     font-size: 120%;
@@ -56,8 +53,8 @@ form {
     height: 800px;
     width: 800px;
     max-width: 800px;
-    max-height:650;
-    border: 1px solid ;
+    max-height:1366px;
+    border: 1px hidden;
     word-wrap: break-word;  
 
 }
@@ -100,9 +97,9 @@ form {
 	opacity: 0;
 	overflow: hidden;
 	color: blueviolet;
-	-webkit-animation: rotateWord 10s linear infinite 0s;
-	-ms-animation: rotateWord 10s linear infinite 0s;
-	animation: rotateWord 10s linear infinite 0s;
+	-webkit-animation: rotateWord 8s linear infinite 0s;
+	-ms-animation: rotateWord 8s linear infinite 0s;
+	animation: rotateWord 8s linear infinite 0s;
 }
 
 .rolling-1 span:nth-child(2) {
