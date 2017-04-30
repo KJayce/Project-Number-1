@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta name="UTF-8" content="html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="formstyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <title> Tech Support</title>
+
 </head>
 
 <body>
-    <section class="form-content">
-        <header>
-            <h1>Technical Support</h1>
-            </header>
 
-                <div id="thwo">
-                    <h2>At your service!</h2>
+    <section class="container">
+        <div class="page-header">
+            <h1>Technical Support</h1>
+            <div>
+                <h2 class="roller">
+
+                    <span>We</span>
+                    <div class="rolling rolling-1">
+                        <span>care</span>
+                        <span>listen</span>
+                        <span>help!</span>
+
+                    </div>
+
+                </h2>
+            </div>
+            <h2 id="2hd">At your service!</h2>
+        </div>
+
+
+        <form class="jumbotron" id="Techsupp-form" method="POST" action="Techsupp.php" role="form">
+            <div id="1nam">
+                <label for="fname"> First Name </label>
+                <input type="text" id="fname" />
+            </div>
+            <div id="2nam">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" />
+                <div>
+                    <label for="mail">E-mail Adress</label>
+                    <input type="text" name="mail" value="E-mail Adress">
                 </div>
 
-
-                <form id="Techsupp-form" method="POST" action="Techsupp.php" role="form">
-                    <div id="1nam">
-                        <label for="fname"> First Name </label>
-                        <input type="text" id="fname" />
-                    </div>
-                    <div id="2nam">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" />
-                    </div>
-
-                    <div>
-
-                        <label for="Countrylist"> Country </label>
-                        <select id="Countrylist">
+                <label for="Countrylist"> Country </label>
+                <select id="Countrylist">
 
                 <option value=" - "> - </option>
                 <option value="Austria">Austria</option>
@@ -55,35 +71,39 @@
                 <option value="United Kingdom">United Kingdom</option>
 
                 </select>
-                    </div>
+            </div>
 
-                    <div>
-                        <label>Gender</label>
-                        <section id="gndr">
-                            <input type="radio" name="Gender" value="Male">Male<br>
-                            <input type="radio" name="Gender" value="Female">Female
-                        </section>
-                    </div>
-                    <div>
-                        <label for="issuelist">What's going wrong?</label>
-                        <select id="issuelist">
+            <div>
+                <label>Gender</label>
+                <section id="gndr">
+                    <input type="radio" name="Gender" value="Male">Male<br>
+                    <input type="radio" name="Gender" value="Female">Female
+
+            </div>
+            <div>
+                <label for="issuelist">What's going wrong?</label>
+                <select id="issuelist">
                 <option value="Account">Account</option>
                 <option value="Technical">Technical Issue</option>
                 <option value="Transactions">Transactions</option>
             </select>
-                    </div>
+            </div>
 
-                    <div>
-                        <label for="comment">Tell us in details</label><br>
+            <div id="Msg">
+                <label for="comment">Tell us in details</label><br>
 
-                        <textarea id="comment" rows="20" cols="50" form="usrform" placeholder="Describe your issue here..."></textarea>
-                    </div>
+                <textarea id="comment" rows="10" cols="50" form="usrform" placeholder="Describe your issue here..."></textarea>
+            </div>
 
-                   <button class="button" type="submit"> submit </button>
+            <button class="button btn-success btn-lg" type="submit"> submit </button>
 
-                </form>
+        </form>
 
-    </section>
+
+
+        </section>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
