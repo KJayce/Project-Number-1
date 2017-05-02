@@ -61,11 +61,6 @@ form {
 
 }
 
-#gndr {
-    position: relative;
-    left: 60px;
-    bottom: 20px;
-}
 
 #msg {
     display: block;
@@ -73,18 +68,27 @@ form {
     margin: 0;
 
 }
-
+radio {
+    display: list-item;
+    position: relative;
+    left: 60px;
+    bottom: 20px;
+    
+}
 label{
+
     display: inline-block;
-    float: left;
     clear: left;
     width: 350px;
     text-align: center;
+
 }
 input {
-  display: inline-block;
-  float: left;
+
+    display: inline-block;
+
 }
+
 
 .roller {
 
