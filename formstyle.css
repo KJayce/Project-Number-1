@@ -1,5 +1,8 @@
+img body {
+    width:100%;
+    height: auto;
+}
 body{
-
     background: url("Problem.jpg") no-repeat scroll center;
     -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -60,16 +63,6 @@ form {
     border: 1px hidden;
     word-wrap: break-word;  
 
-}
-
-@media screen and (max-width: 768px){
-    .container {font-size: 18px;}
-
-}
-
-@media screen and (max-width: 320px) {
-
-    .container {font-size: 9px}
 }
 
 #msg {
@@ -146,36 +139,3 @@ input {
 
 }
 
-@-webkit-keyframes rotateWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); }
-	5% { opacity: 1; -webkit-transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); }
-	20% { opacity: 0; -webkit-transform: translateY(30px); }
-	80% { opacity: 0; }
-    100% { opacity: 0; }
-}
-@-ms-keyframes rotateWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -ms-transform: translateY(-30px); }
-	5% { opacity: 1; -ms-transform: translateY(0px);}
-    17% { opacity: 1; -ms-transform: translateY(0px); }
-	20% { opacity: 0; -ms-transform: translateY(30px); }
-	80% { opacity: 0; }
-    100% { opacity: 0; }
-}
-@keyframes rotateWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
-	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
-	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
-	80% { opacity: 0; }
-    100% { opacity: 0; }
-}
-@media screen and (max-width: 768px){
-    .roller { font-size: 18px; }
-}
-@media screen and (max-width: 320px){
-    .roller { font-size: 9px; }
-}
