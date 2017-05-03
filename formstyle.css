@@ -1,8 +1,5 @@
-img body {
-    width:100%;
-    height: auto;
-}
 body{
+
     background: url("Problem.jpg") no-repeat scroll center;
     -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -13,7 +10,6 @@ body{
   display:block;
   padding: 0 !important;
   margin: 0;
-  
 
 
 
@@ -45,7 +41,7 @@ form {
     border-color: beige;
 
 }
-.container {
+.container-fluid {
     
     border-radius: 1%;
     -webkit-background-size: 80px 65px;
@@ -65,26 +61,27 @@ form {
 
 }
 
+
+
+#gndr {
+    position: relative;
+    left: 60px;
+    bottom: 20px;
+}
+
 #msg {
     display: block;
     padding: 0 !important;
     margin: 0;
 
 }
-#gndr {
-    display: inline;
-    position: relative;
-    left: 21.2em;
-    bottom: 30px;
-    
-}
-label{
 
+label{
+    
     display: inline-block;
     clear: left;
     width: 350px;
     text-align: center;
-
 }
 input {
 
@@ -139,3 +136,36 @@ input {
 
 }
 
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@media screen and (max-width: 768px){
+	.phrase { font-size: 18px; }
+}
+@media screen and (max-width: 320px){
+	.phrase { font-size: 9px; }
+}
