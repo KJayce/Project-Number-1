@@ -43,7 +43,7 @@
                 }
             }
 
-        if ($_POST["Motive"] == "."){
+        if ($_POST["Motive"] == "null"){
             $MotiveErr = "An unnatendance motive is required";
             }   else {
                 $Motive = test_input ($_POST["Motive"]);
@@ -60,7 +60,7 @@
 ?>
 
 <h1 class= "page-header">Unattendance Motive</h1>
-<p><span>required field</span></p>
+<p><span class="error">Required field</span></p>
 
 <form class"form-horizontal" name="form1" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 <section class="container-fluid">
@@ -89,31 +89,33 @@
                 <label class="control-label col-sm-2" for="Motive">Motive:
                 </label>
                 <div class="col-sm-10"> 
-                    <select id="Motive">
-                        <<option value=".">-</option>
+                    <select name="Motive">
+                        <option value="null">-</option>
                         <option value="A"> Sick</option>
                         <option value="B"> Dead Pet</option>
                         <option value="C"> Family issues</option>
                         <option value="D"> Extra-curricular Activities</option>
                     </select> <br>
+            <span class="error">*<?php echo $MotiveErr; ?></span>
 
                 <div id="gndr" class="form-group">
                     <label class="control-label col-sm-2" for="Gender">Gender:</label>
                         <div class="col-sm-10">
                         <input class="form-inline" type="radio" name="Gender"<?php if (isset($gender) && $gender=="male") echo "checked";?> value="M">Male
                         <input class="form-inline" type="radio" name="Gender"<?php if (isset($gender) && $gender=="female") echo "checked";?> value="F">Female
+                        <span class="error">* <?php echo $genderErr;?></span>
+                        <br><br>
                         </div>
                 </div>  
 
                     <div class="form-group"> 
                         <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" value="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" name="submit" value="submit" class="btn btn-default">Submit</button>
                         </div>
                     </div>
                 </div>
     </section>
-    <h3 class="jumbotron">Dear <?php echo($_POST['Tname']); ?>.</h3>
-        <p>I would like to apologize for my  
+    
     </form>
 
 
