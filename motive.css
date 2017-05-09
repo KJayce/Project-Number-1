@@ -3,8 +3,27 @@ body {
 }
 
 
-
+.section {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
 .page-header {
+    background-color:lightcyan;
     text-align: center;
 
+}
+
+.panel-info {
+    background-color: lightblue;
+    text-align: center;
+
+}
+
+.container-fluid{
+    background-color: lightgoldenrodyellow;
+}
+
+.btn btn-default{
+    position: absolute;
+    float: left;
+    clear: right;
 }

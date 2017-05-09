@@ -10,17 +10,60 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-
-        $Sname="Julia";
-        $Tname="Catherine";
-        $absReason=array('sick', 'dead pet', 'extra', 'dead aunt', 'dead grandpa');
-
-?>
 
 <h1 class= "page-header">Unattendance Motive</h1>
- 
-<h3>Dear <?php echo $Sname; ?>.</h3>
+
+<form class"form-horizontal" name="form1" method="POST" action="">
+<section class="container-fluid">
+        <h2 class="panel-info"><div class="panel-body">Please complete following form</div></h2>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Sname">Student Name:
+                </label>
+
+                <div class="col-sm-10"> <input type="name" id="Sname" placeholder="Enter Student Name...">
+                </div>  
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Tname">Teacher Name:
+                </label>
+
+                <div class="col-sm-10"> <input type="name" id="Tname" placeholder="Enter Teacher Name...">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Ex">Motive:
+                </label>
+                <div class="col-sm-10"> 
+                    <select id="Ex">
+                        <<option value=".">-</option>
+                        <option value="A"> Sick</option>
+                        <option value="B"> Dead Pet</option>
+                        <option value="C"> Family issues</option>
+                        <option value="D"> Extra-curricular Activities</option>
+                    </select> <br>
+
+                <div id="gndr" class="form-group">
+                    <label class="control-label col-sm-2" for="gender">Gender:</label>
+                        <div class="col-sm-10">
+                        <input class="form-inline" type="radio" name="Gender" value="M">Male
+                        <input class="form-inline" type="radio" name="Gender" value="F">Female
+                        </div>
+                </div>  
+
+                    <div class="form-group"> 
+                        <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    </form>
+
+<h3 class="jumbotron">Dear <?php echo($_GET['Tname']); ?>.</h3>
+
+
 
 </body>
 </html>
