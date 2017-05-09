@@ -1,0 +1,33 @@
+@import "http://fonts.googleapis.com/css?family=Droid+Serif";
+
+.error {color: #FF0000;
+}
+body {
+    background-color: darkgray;
+}
+
+
+.section {
+font-family: 'Droid-Serif',serif;
+}
+.page-header {
+    background-color:lightcyan;
+    text-align: center;
+
+}
+
+.panel-info {
+    background-color: lightblue;
+    text-align: center;
+
+}
+
+.container-fluid{
+    background-color: lightgoldenrodyellow;
+}
+
+.btn btn-default{
+    position: absolute;
+    float: left;
+    clear: right;
+}

@@ -7,12 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-    
-    <input type="text" name="name">
-    <input type="text" name="likes">
+   
+<h1>Bonjour <?php echo $_GET['nom']; ?>!</h1>
 
-    </form>
-    <h1><?php echo $name;?> aime <?php echo $likes; ?></h1>
 </body>
 </html>

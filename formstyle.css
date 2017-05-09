@@ -41,7 +41,7 @@ form {
     border-color: beige;
 
 }
-.container {
+.container-fluid {
     
     border-radius: 1%;
     -webkit-background-size: 80px 65px;
@@ -61,6 +61,8 @@ form {
 
 }
 
+
+
 #gndr {
     position: relative;
     left: 60px;
@@ -75,16 +77,18 @@ form {
 }
 
 label{
+    
     display: inline-block;
-    float: left;
     clear: left;
     width: 350px;
     text-align: center;
 }
 input {
-  display: inline-block;
-  float: left;
+
+    display: inline-block;
+
 }
+
 
 .roller {
 
