@@ -1,5 +1,7 @@
 @import "http://fonts.googleapis.com/css?family=Droid+Serif";
-
+.panel-heading {
+    text-align: center;
+}
 fieldset { 
     display: block;
     margin-left: 2px;
@@ -8,11 +10,14 @@ fieldset {
     padding-bottom: 0.625em;
     padding-left: 0.75em;
     padding-right: 0.75em;
+    border-radius: 5px;
     border: 2px groove (internal value);
 }
 
-.pull-left {
-    position: relative;
+.radio {
+    position: absolute;
+    float: left !important;
+
 }
 
 .error {color: #FF0000;
@@ -25,11 +30,7 @@ body {
 .section {
 font-family: 'Droid-Serif',serif;
 }
-.page-header {
-    background-color:lightcyan;
-    text-align: center;
 
-}
 
 .panel-info {
     background-color: lightblue;

@@ -125,7 +125,7 @@
             
 
                 <div class="form-group" class="radio">
-                    <label class="control-label col-sm-2" for="Gender">Gender:</label>
+                    <label class="control-label col-sm-2" for="Gender">Student's Gender:</label>
                         <div class="col-sm-10">
                         <input class="form-inline" type="radio" name="Gender"<?php if (isset($Gender) && $Gender=="male") echo "checked";?> value="Male">Male <br>
                         <input class="form-inline" type="radio" name="Gender"<?php if (isset($Gender) && $Gender=="female") echo "checked";?> value="Female">Female
@@ -154,6 +154,11 @@
     
     </form>
     </fieldset>
+<div class="panel panel-primary">
+
+<div class="panel-heading"><h1 class="Well">Absence Motive</h1></div>
+
+<div class="panel-body">
 
 
 
@@ -161,19 +166,22 @@
 
 
 
+    
 
 
 
+    </div>
+</div>
 
 
     <?php
 
-    if (!preg_match("/^a-zA-Z*$/", $Tname)){
+    if (!preg_match("/^[a-zA-Z]*$/", $Tname)){
                 $Tname='';
                 }else echo $Tname;
     
         echo "<br>";
-    if (!preg_match ("/^a-zA-Z*$/", $Sname)){
+    if (!preg_match ("/^[a-zA-Z]*$/", $Sname)){
                 $Sname='';
                 }else echo $Sname;
     
