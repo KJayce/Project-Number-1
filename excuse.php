@@ -45,7 +45,6 @@
                 }
             }
 
-
         if ($_SERVER["REQUEST_METHOD"]=="POST"){
             if (empty($_POST["Tname"])){
                 $TnameErr = "Teacher's name is required";
@@ -56,12 +55,16 @@
                 }
             }
 
-
         if ($_POST["Gender"] == null) {
-            $GenderErr = "Gender is required";
+            $GenderErr = "Student's Gender is required";
                 } else {
                     $Gender = test_input($_POST["Gender"]);
                 }
+            }
+        if ($_POST["TGender"] == null){
+            $TGenderErr = "Teacher's gender is required";
+            } else {
+                    $TGender = test_input($_POST["TGender"]);
             }
 
         if ($_POST["Motive"] == "null"){
@@ -121,9 +124,9 @@
                     </select> <span class="error">*<?php echo $MotiveErr; ?></span><br>
             
 
-                <div class="form-group">
+                <div class="form-group" class="radio">
                     <label class="control-label col-sm-2" for="Gender">Gender:</label>
-                        <div class="col-sm-10" class="pull-left">
+                        <div class="col-sm-10">
                         <input class="form-inline" type="radio" name="Gender"<?php if (isset($Gender) && $Gender=="male") echo "checked";?> value="Male">Male <br>
                         <input class="form-inline" type="radio" name="Gender"<?php if (isset($Gender) && $Gender=="female") echo "checked";?> value="Female">Female
                         <span class="error">* <?php echo $GenderErr;?></span>
@@ -131,12 +134,12 @@
                         </div>
                 </div>  
 
-                <div class="form-group">
+                <div class="form-group" class="radio"> 
                     <label class="control-label col-sm-2" for="TGender"> Teacher's Gender:</label>
                         <div class="col-sm-10" class="pull-left">
                         <input class="form-inline" type="radio" name="TGender"<?php if (isset($TGender) && $TGender=="male") echo "checked";?> value="Male">Male <br>
                         <input class="form-inline" type="radio" name="TGender"<?php if (isset($TGender) && $TGender=="female") echo "checked";?> value="Female">Female
-                        <span class="error">* <?php echo $GenderErr;?></span>
+                        <span class="error">* <?php echo $TGenderErr;?></span>
                         <br><br>
                         </div>
                 </div>  
