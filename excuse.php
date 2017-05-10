@@ -1,3 +1,14 @@
+<?php 
+        function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +22,12 @@
 </head>
 <body>
     <?php 
+
         $SnameErr = $TnameErr = $GenderErr = $MotiveErr = "";
-        $Sname = $Tname = $Gender = $Motive = "";
+        $Gender = $Motive = "";
+
+        $Sname =  $_POST['Sname'];
+        $Tname =  $_POST['Tname'];
 
         if ($_SERVER["REQUEST_METHOD"]=="POST"){
             if (empty($_POST["Sname"])){
@@ -36,8 +51,9 @@
             }
 
 
-        if (empty($_POST["Gender"])) {
+        if (!isset($_POST["Gender"])) {
             $GenderErr = "Gender is required";
+            return;
                 } else {
                     $Gender = test_input($_POST["Gender"]);
                 }
@@ -50,17 +66,12 @@
             }
         }
 
-        function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-}
+
 
 ?>
 
-<h1 class= "page-header">Unattendance Motive</h1>
-<p><span class="error">Required field</span></p>
+<h1 class= "page-header">EXGen</h1>
+<p><span class="error"> * Required field</span></p>
 
 <form class"form-horizontal" name="form1" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 <section class="container-fluid">
@@ -69,7 +80,7 @@
                 <label class="control-label col-sm-2" for="Sname">Student Name:
                 </label>
 
-                <div class="col-sm-10"> <input type="text" id="Sname" placeholder="Enter Student Name..." value="<?php echo $Sname; ?>">
+                <div class="col-sm-10"><input type="text" name="Sname" placeholder="Enter Student Name..." value="<?php echo $Sname; ?>">
                 </div>  
             </div>
 
@@ -79,7 +90,7 @@
                 <label class="control-label col-sm-2" for="Tname">Teacher Name:
                 </label>
 
-                <div class="col-sm-10"> <input type="text" id="Tname" placeholder="Enter Teacher Name..." value="<?php echo $Tname; ?>" >
+                <div class="col-sm-10"> <input type="text" name="Tname" placeholder="Enter Teacher Name..." value="<?php echo $Tname; ?>" >
                 </div>
             </div>
             
@@ -91,18 +102,18 @@
                 <div class="col-sm-10"> 
                     <select name="Motive">
                         <option value="null">-</option>
-                        <option value="A"> Sick</option>
-                        <option value="B"> Dead Pet</option>
-                        <option value="C"> Family issues</option>
-                        <option value="D"> Extra-curricular Activities</option>
+                        <option value="Sick"> Sick</option>
+                        <option value="Dead Pet"> Dead Pet</option>
+                        <option value="Family issues"> Family issues</option>
+                        <option value="Extra-curricular Activities"> Extra-curricular Activities</option>
                     </select> <br>
             <span class="error">*<?php echo $MotiveErr; ?></span>
 
                 <div id="gndr" class="form-group">
                     <label class="control-label col-sm-2" for="Gender">Gender:</label>
                         <div class="col-sm-10">
-                        <input class="form-inline" type="radio" name="Gender"<?php if (isset($gender) && $gender=="male") echo "checked";?> value="M">Male
-                        <input class="form-inline" type="radio" name="Gender"<?php if (isset($gender) && $gender=="female") echo "checked";?> value="F">Female
+                        <input class="form-inline" type="radio" name="Gender"<?php if (isset($gender) && $gender=="male") echo "checked";?> value="Male">Male
+                        <input class="form-inline" type="radio" name="Gender"<?php if (isset($gender) && $gender=="female") echo "checked";?> value="Female">Female
                         <span class="error">* <?php echo $genderErr;?></span>
                         <br><br>
                         </div>
@@ -110,13 +121,27 @@
 
                     <div class="form-group"> 
                         <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" name="submit" value="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" name="submit" value="submit" class="btn btn-success">Submit</button>
                         </div>
                     </div>
                 </div>
     </section>
+
+        <?php 
+    echo $Tname;
+    
+    echo "<br>";
+    echo $Sname;
+    
+    echo "<br>";
+    echo $Gender;
+    echo "<br>";
+    echo $Motive;
+    ?>
+
     
     </form>
+
 
 
 
