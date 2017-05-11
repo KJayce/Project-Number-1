@@ -42,7 +42,7 @@ font-family: 'Droid-Serif',serif;
     background-color: lightgoldenrodyellow;
 }
 
-.btn btn-default{
+.btn btn-success{
     position: absolute;
     float: left;
     clear: right;

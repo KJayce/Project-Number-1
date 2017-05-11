@@ -7,31 +7,16 @@
         $data = htmlspecialchars($data);
         return $data;
 }
-?>
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="motive.css">
-    <title>Document</title>
-</head>
-<body>
-    <?php 
 
         $SnameErr = $TnameErr = $GenderErr = $MotiveErr = ""; /*initiate empty variable */
-        $Gender = $Motive = "";
+
 
         $Sname =  $_POST['Sname'];  /* give value to variables who need one */
         $Tname =  $_POST['Tname'];
+        $Gender = $_POST['Gender'];
+        $TGender = $_POST['TGender'];
+        $Motive = $_POST['Motive'];
 
         if ($_SERVER["REQUEST_METHOD"]=="POST"){ /* state in an if the request method of server*/
 
@@ -67,7 +52,7 @@
                     $TGender = test_input($_POST["TGender"]);
             }
 
-        if ($_POST["Motive"] == "null"){
+        if ($_POST["Motive"] == null){
             $MotiveErr = "An unnatendance motive is required";
             }   else {
                 $Motive = test_input ($_POST["Motive"]);
@@ -77,6 +62,21 @@
 
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="excuse.css">
+    <title>Document</title>
+</head>
+<body>
 
 <h1 class= "page-header">EXGen</h1>
 
@@ -115,7 +115,7 @@
                 </label>
                 <div class="col-sm-10"> 
                     <select name="Motive">
-                        <option value="null">-</option>
+                        <option value="">-</option>
                         <option value="Sick"> Sick</option>
                         <option value="Dead Pet"> Dead Pet</option>
                         <option value="Family issues"> Family issues</option>
@@ -137,8 +137,8 @@
                 <div class="form-group" class="radio"> 
                     <label class="control-label col-sm-2" for="TGender"> Teacher's Gender:</label>
                         <div class="col-sm-10" class="pull-left">
-                        <input class="form-inline" type="radio" name="TGender"<?php if (isset($TGender) && $TGender=="male") echo "checked";?> value="Male">Male <br>
-                        <input class="form-inline" type="radio" name="TGender"<?php if (isset($TGender) && $TGender=="female") echo "checked";?> value="Female">Female
+                        <input class="form-inline" type="radio" name="TGender" value="Male">Male <br>
+                        <input class="form-inline" type="radio" name="TGender" value="Female">Female
                         <span class="error">* <?php echo $TGenderErr;?></span>
                         <br><br>
                         </div>
@@ -151,7 +151,7 @@
                     </div>
                 </div>
     </section>
-    
+
     </form>
     </fieldset>
 <div class="panel panel-primary">
@@ -159,14 +159,23 @@
 <div class="panel-heading"><h1 class="Well">Absence Motive</h1></div>
 
 <div class="panel-body">
-
-
-
-
-
-
-
+    <p> Dear <?php if($TGender= 'Male'){
+        echo 'Mister';
+    }elseif ($TGender='Female'){
+        echo 'Madam';
+    }else{
+        echo '';
+    }
     
+    
+    
+    
+    
+    ?>
+
+    </p>
+
+
 
 
 
@@ -175,18 +184,20 @@
 
 
     <?php
-
+    
     if (!preg_match("/^[a-zA-Z]*$/", $Tname)){
-                $Tname='';
+                echo ' ';
                 }else echo $Tname;
     
         echo "<br>";
     if (!preg_match ("/^[a-zA-Z]*$/", $Sname)){
-                $Sname='';
+                echo ' ';
                 }else echo $Sname;
     
         echo "<br>";
         echo $Gender;
+        echo "<br>";
+        echo $TGender;
         echo "<br>";
         echo $Motive;
     ?>
