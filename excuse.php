@@ -178,10 +178,9 @@
                                         }else{
                                             echo ' ';
                                         }
-                                    ?>
+                                    ?> will be unable to attend to classes on <?php echo date('l JS \of F Y');?> because /* integrate code for situational reasons here */
 
     </p>
-
 
 
 
