@@ -37,9 +37,11 @@ font-family: 'Droid-Serif',serif;
     text-align: center;
 
 }
-
+section.container-fluid{
+    border-radius: 5%;
+}
 .container-fluid{
-    background-color: lightgoldenrodyellow;
+    background-color: crimson;
 }
 
 .btn btn-success{

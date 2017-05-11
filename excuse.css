@@ -39,7 +39,8 @@ font-family: 'Droid-Serif',serif;
 }
 
 .container-fluid{
-    background-color: lightgoldenrodyellow;
+    border-radius: 5%;
+    background-color: lightgray;
 }
 
 .btn btn-default{

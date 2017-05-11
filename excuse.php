@@ -117,10 +117,10 @@
                 <div class="col-sm-10"> 
                     <select name="Motive">
                         <option value="">-</option>
-                        <option value="Sick"> Sick</option>
-                        <option value="Dead Pet"> Dead Pet</option>
-                        <option value="Family issues"> Family issues</option>
-                        <option value="Extra-curricular Activities"> Extra-curricular Activities</option>
+                        <option value="Sk"> Sick</option>
+                        <option value="DP"> Dead Pet</option>
+                        <option value="Fi"> Family issues</option>
+                        <option value="ECA"> Extra-curricular Activities</option>
                         
                     </select> <span class="error">*<?php echo $MotiveErr; ?></span><br>
             
@@ -171,14 +171,19 @@
                 echo $Tname;
             ?>.
     </p>
-    <p> I would like to apologize, my <?php if($Gender=='Male'){
+    <p> I would like to apologize, since my <?php if($Gender=='Male'){
                                             echo 'son';
                                         }elseif($Gender=='Female'){
                                             echo 'daughter';
                                         }else{
                                             echo ' ';
                                         }
-                                    ?> will be unable to attend to classes on <?php echo date('l JS \of F Y');?> because /* integrate code for situational reasons here */
+                                    ?> will be unable to attend to classes on
+                                    <?php echo date('l jS \of F Y');?> because 
+                                    <?php if($Motive=='Sk'){
+                                    echo"she is sick";
+                                    }
+                                    ?>
 
     </p>
 
@@ -188,24 +193,5 @@
     </div>
 </div>
 
-
-    <?php
-    
-    if (!preg_match("/^[a-zA-Z]*$/", $Tname)){
-                echo ' ';
-                }else echo $Tname;
-    
-        echo "<br>";
-    if (!preg_match ("/^[a-zA-Z]*$/", $Sname)){
-                echo ' ';
-                }else echo $Sname;
-    
-        echo "<br>";
-        echo $Gender;
-        echo "<br>";
-        echo $TGender;
-        echo "<br>";
-        echo $Motive;
-    ?>
 </body>
 </html>
