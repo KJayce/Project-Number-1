@@ -17,6 +17,7 @@
         $Gender = $_POST['Gender'];
         $TGender = $_POST['TGender'];
         $Motive = $_POST['Motive'];
+        date_default_timezone_set('UTC+1');
 
         if ($_SERVER["REQUEST_METHOD"]=="POST"){ /* state in an if the request method of server*/
 
@@ -159,19 +160,25 @@
 <div class="panel-heading"><h1 class="Well">Absence Motive</h1></div>
 
 <div class="panel-body">
-    <p> Dear <?php if($TGender= 'Male'){
-        echo 'Mister';
-    }elseif ($TGender='Female'){
-        echo 'Madam';
-    }else{
-        echo '';
-    }
-    
-    
-    
-    
-    
-    ?>
+    <p> Dear <?php if($TGender=='Male'){
+                echo 'Mister';
+                    }elseif ($TGender=='Female'){
+                echo 'Madam';
+                    }else{
+                echo ' ';
+                }
+                echo ' ';
+                echo $Tname;
+            ?>.
+    </p>
+    <p> I would like to apologize, my <?php if($Gender=='Male'){
+                                            echo 'son';
+                                        }elseif($Gender=='Female'){
+                                            echo 'daughter';
+                                        }else{
+                                            echo ' ';
+                                        }
+                                    ?>
 
     </p>
 
