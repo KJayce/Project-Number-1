@@ -178,17 +178,25 @@
                                         }else{
                                             echo ' ';
                                         }
-                                    ?> will be unable to attend to classes on
+                                    ?> will be unable to attend classes on
                                     <?php echo date('l jS \of F Y');?> because 
-                                    <?php if($Motive=='Sk'){
-                                    echo"she is sick";
-                                    }
-                                    ?>
+                                    <?php if($Gender== 'Male'){
+                                        echo'he';
+                                    }elseif($Gender=='Female'){
+                                        echo 'she';
+                                    }else{
+                                        echo ' ';
+                                    } ?> <?php 
+                                            $r=array('has a cold', 'has a migraine', ' has a bad case of diarhea', ' has a serious case of food poisoning');
+                                            $randar=array_rand($r, 1);
+                                            if($Motive == 'Sk'){
+                                                print_r ($r[$randar]);
+                                            }elseif ($Motive)
+                                            ?>.
+
+
 
     </p>
-
-
-
 
     </div>
 </div>
