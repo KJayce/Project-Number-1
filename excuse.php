@@ -187,11 +187,22 @@
                                     }else{
                                         echo ' ';
                                     } ?> <?php 
+                                    
                                             $r=array('has a cold', 'has a migraine', ' has a bad case of diarhea', ' has a serious case of food poisoning');
                                             $randar=array_rand($r, 1);
+                                            $fam=array('will be attending a relatives funeral', 'will be needed at a family meeting');
+                                            $randFam=array_rand($fam,1);
                                             if($Motive == 'Sk'){
                                                 print_r ($r[$randar]);
-                                            }elseif ($Motive)
+                                            }elseif ($Motive=='DP'){
+                                                echo 'is depressed since his pet has been dead and, school seems to be out of question';
+                                            }elseif ($Motive=='Fi'){
+                                                print_r ($r[$randFam]);
+                                            }elseif ($Motive== 'ECA'){
+                                                echo 'will be needed at important, extra-curricular activities';
+                                            }else{
+                                                echo '';
+                                            }
                                             ?>.
 
 
