@@ -37,14 +37,13 @@ font-family: 'Droid-Serif',serif;
     text-align: center;
 
 }
-section.container-fluid{
-    border-radius: 5%;
-}
+
 .container-fluid{
-    background-color: crimson;
+    border-radius: 5%;
+    background-color: lightgray;
 }
 
-.btn btn-success{
+.btn btn-default{
     position: absolute;
     float: left;
     clear: right;
