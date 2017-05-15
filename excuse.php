@@ -42,7 +42,7 @@
             }
 
         if ($_POST["Gender"] == null) {
-            $GenderErr = "Student's Gender is required";
+            $GenderErr = "Student's gender is required";
                 } else {
                     $Gender = test_input($_POST["Gender"]);
                 }
@@ -121,6 +121,7 @@
                         <option value="DP"> Dead Pet</option>
                         <option value="Fi"> Family issues</option>
                         <option value="ECA"> Extra-curricular Activities</option>
+                        <option value="misc"> Others </option>
                         
                     </select> <span class="error">*<?php echo $MotiveErr; ?></span><br>
             
@@ -202,8 +203,10 @@
                                                 echo 'will be needed at important, extra-curricular activities';
                                             }else{
                                                 echo '';
-                                            }
-                                            ?>.
+                                            } /* come with a way to implement loops within the code */
+                                            ?>. 
+
+
 
 
 
